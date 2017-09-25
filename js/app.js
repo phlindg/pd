@@ -52,7 +52,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 			templateUrl: "templates/companies.html"
 		})
 
-		$urlRouterProvider.otherwise("/events")
+		$urlRouterProvider.otherwise("")
 });
 app.run(function($rootScope){
 	$rootScope.$on('$stateChangeSuccess', function() {
