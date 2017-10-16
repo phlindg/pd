@@ -26,6 +26,11 @@ h6 {
   font-family: "Times New Roman", times,serif;
   text-transform: uppercase; }
 
+.cirkelbild {
+  max-width: 20%; 
+  height:auto;
+}
+
 section {
   padding: 100px 0; }
   section h2.section-heading {
@@ -39,6 +44,7 @@ section {
     margin-bottom: 75px;
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
 
 @media (min-width: 768px) {
   section {
@@ -67,9 +73,8 @@ body {
     font-size: 12px;
     right: 0;
     padding: 13px;
-
     text-transform: uppercase;
-    color: #003F26;
+    color: white;
     border: 0;
     background-color: #F49900;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -77,11 +82,15 @@ body {
   #mainNav .navbar-brand {
     color: #003F26;
     font-size:100%;
+    max-width:70%;
     font-weight: bold;
     font-family: "Roboto", serif;
     text-transform: uppercase;}
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #F49900; }
+  #mainNav .logobild{
+    width:50%;
+  }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -115,6 +124,9 @@ body {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
+    #mainNav .logobild {
+      width:50%;
+    }
     #mainNav .navbar-nav .nav-item .nav-link {
       padding: 1.1em 1em !important; }
     #mainNav.navbar-shrink {
@@ -126,9 +138,10 @@ body {
         padding: 12px 0; } }
 
 header.masthead {
+  padding-top:10%;
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/logos/hemsida.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -447,11 +460,12 @@ header.masthead {
 
 .team-member {
   
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   text-align: center; }
   .team-member img {
-    width: 150px;
-    height: 150px;
+    width: 80%;
+    height: 80%;
+    
     border: 7px solid white; }
   .team-member h4 {
     margin-top: 25px;

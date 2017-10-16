@@ -40,7 +40,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 			templateUrl: "templates/events.html"
 		})
 		.state("modal",{
-			url: "/{portfolioModal:[0-9]*}",
+			url: "/events/{portfolioModal:[0-9]*}",
 			templateUrl: "templates/events.html"
 		})
 		.state("students",{
@@ -51,8 +51,8 @@ app.config(function($stateProvider, $urlRouterProvider){
 			url: "/companies",
 			templateUrl: "templates/companies.html"
 		})
-
-		$urlRouterProvider.otherwise("")
+		$urlRouterProvider.when("","/");
+		$urlRouterProvider.otherwise("");
 });
 app.run(function($rootScope){
 	$rootScope.$on('$stateChangeSuccess', function() {
