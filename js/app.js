@@ -51,6 +51,10 @@ app.config(function($stateProvider, $urlRouterProvider){
 			url: "/companies",
 			templateUrl: "templates/companies.html"
 		})
+		.state("evaluation",{
+			url: "/evaluation",
+			template: '<iframe class="doc" src="https://docs.google.com/forms/d/e/1FAIpQLSelNUWG8RiIuJ_8Z_AtFRvJUzjjkk_gHJ-PIs6Cz_ejqjEHNw/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Läser in...</iframe>'
+		})
 		$urlRouterProvider.when("","/");
 		$urlRouterProvider.otherwise("");
 });

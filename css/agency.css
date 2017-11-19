@@ -90,7 +90,7 @@ body {
       color: #F49900; }
   #mainNav .logobild{
     width:50%;
-  }
+   }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -114,7 +114,8 @@ body {
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: rgb(241,220,219); /*Fallback  */
-    background-color: rgba(241,220,219,0.7); }
+    background-color: rgba(241,220,219,0.0);
+     }
     #mainNav .navbar-brand {
       
       font-size: 1,5em;
@@ -126,9 +127,19 @@ body {
       transition: all 0.3s; }
     #mainNav .logobild {
       width:50%;
+       background-color: white;
+    border-radius: 50%;
+
+  }
+  #mainNav.navbar-shrink .logobild {
+    background-color: rgba(0,0,0,0);
+  }
     }
     #mainNav .navbar-nav .nav-item .nav-link {
-      padding: 1.1em 1em !important; }
+      padding: 1.1em 1em !important; 
+      color:#F49900;
+      opacity: ,5;}
+
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
@@ -136,6 +147,9 @@ body {
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0; } }
+      #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+        color:#003F26;
+      }
 
 header.masthead {
   padding-top:10%;
@@ -475,35 +489,24 @@ header.masthead {
     margin-top: 0; }
 
 section#contact {
-  background-color: rgba(241,220,219,0.7);
   background-image: url("../img/map-image.png");
+  background-color: rgba(241,220,219,0.7);
+  padding:5%;
+  background-size: contain;
 
   background-repeat: no-repeat;
   background-position: center; }
   section#contact .section-heading {
     color: black; }
   section#contact .form-group {
-    margin-bottom: 25px; }
-  section#contact .myCircle {
-    width: 30px;
-      height: 30px;
-      opacity: 0.5;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      border-radius: 25px;
-      background: blue;
-      position: absolute;
-      left:53%;
-      top:-27%;
-      margin-right: -53%;
-  }
+    margin-bottom: 5px; }
     section#contact .form-group input,
     section#contact .form-group textarea {
-      padding: 20px; }
+      padding: 10px; }
     section#contact .form-group input.form-control {
       height: auto; }
     section#contact .form-group textarea.form-control {
-      height: 236px; }
+      height: 150px; }
   section#contact .form-control:focus {
     border-color: #F49900;
     box-shadow: none; }
@@ -531,6 +534,9 @@ section#contact {
     text-transform: uppercase; }
   section#contact .text-danger {
     color: #e74c3c; }
+
+
+
 
 footer {
   padding: 25px 0;
