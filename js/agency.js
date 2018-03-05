@@ -30,8 +30,10 @@
   $(window).scroll(function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      $("#logobild").attr("src", "../img/logos/smaller_logotype.png");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
+      $("#logobild").attr("src", "../img/logos/smaller_logotype_orange.png")
     }
   });
 

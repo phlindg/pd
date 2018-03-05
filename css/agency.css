@@ -30,7 +30,16 @@ h6 {
   max-width: 20%; 
   height:auto;
 }
+.pastevents {
+  opacity: .5;
+}
 
+.instabildosv {
+  max-width: 125%;
+  height: auto;
+  margin-left: -20%;
+  margin-right:-20%;
+}
 section {
   padding: 100px 0; }
   section h2.section-heading {
@@ -48,7 +57,15 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0; } }
+    padding: 150px 0; }
+.instabildosv{
+  max-width: 50%;
+  height:auto;
+  margin-left:25%;
+}
+
+     }
+
 
 ::-moz-selection {
   background: #F49900;
@@ -87,6 +104,7 @@ body {
     font-family: "Roboto", serif;
     text-transform: uppercase;}
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+
       color: #F49900; }
   #mainNav .logobild{
     width:50%;
@@ -101,7 +119,7 @@ body {
     text-decoration: underline;
     /*text-transform: uppercase;*/ }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .nav-link:active{
-      
+      font-weight: bold;
       color: #F49900; }
     
 
@@ -125,18 +143,15 @@ body {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
-    #mainNav .logobild {
-      width:50%;
-       background-color: white;
-    border-radius: 50%;
 
-  }
+
   #mainNav.navbar-shrink .logobild {
     background-color: rgba(0,0,0,0);
   }
     }
     #mainNav .navbar-nav .nav-item .nav-link {
       padding: 1.1em 1em !important; 
+      
       color:#F49900;
       opacity: ,5;}
 
