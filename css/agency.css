@@ -33,12 +33,37 @@ h6 {
 .pastevents {
   opacity: .5;
 }
-
+.whyapply {
+  background-color: rgb(40,35,108);
+  color: white ;
+}
+.ansokan-rubrik {
+  font-size: 34px;
+  font-family: "Times";
+  margin-bottom: 10px;
+  text-transform: none;
+}
+.roll-rubrik {
+  font-size: 16px;
+  font-family: "Roboto";
+}
+.whypd{
+  font-size:16px;
+  font-family: "Times";
+  margin-bottom: 10px;
+}
+.brod {
+  font-weight: 100;
+}
 .instabildosv {
   max-width: 125%;
   height: auto;
   margin-left: -20%;
   margin-right:-20%;
+}
+.minrow {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 section {
   padding: 100px 0; }
